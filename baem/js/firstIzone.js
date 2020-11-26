@@ -6,6 +6,10 @@ function reboot(parent){
   [canvas,ctx]=createCanvas();
   parent.appendChild(elt("div",null,canvas,skip));
   izoneAni();
+  skip.onclick=function(e){
+    parent.removeChild(parent.childNodes[1]);
+  }
+  
   
 }
 //캔버스 초기화 
@@ -24,7 +28,7 @@ function izoneAni(){
     ctx.webkitImageSmoothingEnabled = false;
     ctx.mozImageSmoothingEnabled = false;
     ctx.imageSmoothingEnabled = false;
-    ctx.drawImage(imgIze,Math.floor(canvas.width/2)-98,Math.floor(canvas.height/2)-98,196,196)
+    ctx.drawImage(imgIze,Math.floor(canvas.width/2)-46,Math.floor(canvas.height/2)-46,98,98)
   };
   imgIze.src="../ize.png";
   
