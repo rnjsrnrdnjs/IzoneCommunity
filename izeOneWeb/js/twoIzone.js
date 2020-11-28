@@ -1,26 +1,28 @@
-function twostart(){
-  includeHTML(callback);
-  var header=elt("header",{})  
-  
-  
-  //로고 추가
-  var imgIze = new Image();
-  imgIze.onload = function () {
-    imgIze.width=150;
-    imgIze.height=106;
-  }
-  imgIze.src = "../img/IZONE_Logo.png";
-var imgIze2 = new Image();
-  imgIze2.onload = function () {
-    imgIze2.width=250;
-    imgIze2.height=96;
-  }
-  imgIze2.src = "../img/wizOne.png";
-let p_1=elt("p",null);
- 
-  document.body.appendChild(leftSide);
-  document.body.appendChild(main);
-  document.body.appendChild(footer);
-  
+function twostart() {
+  var headChild=elt("div",{id:"header"});
+  headChild.style.width=100+"vw";
+  headChild.style.height=20+"vh";
+  document.body.appendChild(headChild);
+  $("#header").load("header.html");
 
+  var navChild=elt("div",{id:"nav"});
+  navChild.style.width=30+"vw";
+  navChild.style.height=65+"vh";
+  navChild.style.float="left";
+  document.body.appendChild(navChild);
+  $("#nav").load("nav.html");
+  
+  var sectionChild=elt("div",{id:"section"});
+  sectionChild.style.width=50+"vw";
+  sectionChild.style.height=65+"vh";
+  sectionChild.style.float="left";
+  document.body.appendChild(sectionChild);
+  $("#section").load("section.html");
+  
+  var footerChild=elt("div",{id:"footer"});
+  footerChild.style.width=100+"vw";
+  footerChild.style.height=15+"vh";
+  footerChild.style.clear="left";
+  document.body.appendChild(footerChild);
+  $("#footer").load("footer.html");
 }
