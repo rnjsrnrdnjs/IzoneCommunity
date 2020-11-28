@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+.ize-font{
+   font-family: 'Hi Melody', cursive;
+}
+.ize-color{
+  color:#ffadc8;
+}
+ #topMenu {            
+  height: 50px; 
+  width: 1000px;
+  margin-left: auto; 
+  margin-right: auto;
+
+}
+#topMenu ul li {  
+  list-style: none;
+  color: white;    
+  background-color: #2d2d2d;  
+  float: left;               
+  line-height: 40px;         
+  vertical-align: middle;    
+  text-align: center;         
+}
+#topMenu .menuLink {                             
+  text-decoration:none;    
+  color: white;            
+  display: block;          
+  width: 150px;            
+  font-size: 15px;         
+  font-weight: bold;       
+}
+#topMenu .menuLink:hover {          
+  color: red;                 
+  background-color: #4d4d4d;  
+}
