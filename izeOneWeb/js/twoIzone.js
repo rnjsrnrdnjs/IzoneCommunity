@@ -1,7 +1,7 @@
 function twostart() {
   var headChild=elt("div",{id:"header"});
   headChild.style.width=100+"vw";
-  headChild.style.height=20+"vh";
+  headChild.style.height=200+"px";
   document.body.appendChild(headChild);
   $("#header").load("header.html");
 
@@ -11,10 +11,10 @@ function twostart() {
   
   var sectionChild=elt("div",{id:"section"});
   sectionChild.style.width=100+"vw";
-  sectionChild.style.height=400+"vh";
+  sectionChild.style.height=7000+"px";
   document.body.appendChild(sectionChild);
   $("#section").load("section.html");
-  
+
   var footerChild=elt("div",{id:"footer"});
   footerChild.style.width=100+"vw";
   footerChild.style.height=200+"px";

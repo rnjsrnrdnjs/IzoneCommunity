@@ -1,6 +1,7 @@
 var canvas;
 var ctx;
 var cpyImg=[];
+var izeMem = ["../img/0.jpg", "../img/1.jpg", "../img/2.jpg", "../img/3.jpg", "../img/4.jpg", "../img/5.jpg", "../img/6.jpg", "../img/7.jpg", "../img/8.jpg", "../img/9.jpg", "../img/10.jpg", "../img/11.jpg"];
 //mvc? 모델 적용할지 아직모르겠으나 처음 시작 페이지 로딩
 function reboot(parent) {
   var skip = elt("button", { class: "btn btn-outline-primary" }, "Skip");
@@ -53,7 +54,7 @@ function izoneAni() {
   var izeone = [];
   var moveIze = [[0, -1], [1 / 3, -2 / 3], [2 / 3, -1 / 3], [1, 0], [2 / 3, 1 / 3], [1 / 3, 2 / 3], [0, 1], [-1 / 3, 2 / 3], [-2 / 3, 1 / 3], [-1, 0], [-2 / 3, -1 / 3], [-1 / 3, -2 / 3]];
   var colorToIze = ["red", "tomato", "lightsalmon", "gold", "lime", "springgreen", "lightseagreen", "skyblue", "royalblue", "mediumslateblue", "blueviolet", "fuchsia",];
-  var izeMem = ["../img/0.jpg", "../img/1.jpg", "../img/2.jpg", "../img/3.jpg", "../img/4.jpg", "../img/5.jpg", "../img/6.jpg", "../img/7.jpg", "../img/8.jpg", "../img/9.jpg", "../img/10.jpg", "../img/11.jpg"];
+  
 
   for (let i = 0; i < 12; i++) {
     let plus = 110;
